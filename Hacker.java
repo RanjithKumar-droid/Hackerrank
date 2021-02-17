@@ -13,21 +13,21 @@ public class Hacker
 			System.out.println("Fail");
 		}
 		if(mark>38) {
-			if((last==3) ||(last == 8)) {
-				mark+= 2;
-				System.out.println("Rounded off value is "+ mark);
-			}
+		if((last==3) ||(last == 8)) {
+			mark+= 2;
+			System.out.println("Rounded off value is "+ mark);
+		}
 			
-			if((last==4) ||(last == 9)) {
-				mark+= 1;
-				System.out.println("Rounded off value is "+mark);
-			}
+		if((last==4) ||(last == 9)) {
+			mark+= 1;
+			System.out.println("Rounded off value is "+mark);
+		}
 		}
 		if((last<3)||((last>5)&&(last<7)))
 		{
 			System.out.println("Grade is "+or);
 		}
-	}
+	 }
 	
 	//Plus Minus
 	
@@ -39,10 +39,10 @@ public class Hacker
 			arr[i]=s.nextInt();
 		}
 		float count[] = {0,0,0};
-	    for(int i=0;i<arr.length;i++) {
-		 if(arr[i]>0) {
-		    count[0]++;
-//			System.out.println("Checking count  "+count[0]);
+	        for(int i=0;i<arr.length;i++) {
+		if(arr[i]>0) {
+		        count[0]++;
+//		    System.out.println("Checking count  "+count[0]);
 		 }
 		if(arr[i]<0) {
 			count[1]++;
@@ -55,19 +55,18 @@ public class Hacker
 	System.out.println("Negative: "+count[1]/arr.length);
 	System.out.println("Zero: "+count[2]/arr.length);
 	
-}
+     }
 	
 	// Kangaroo
 	
 	void kangaroo(int x1,int x2,int v1, int v2)
 	{
-		for(int i=0;i<100;i++) 
-		{
-			if(x1 + i*v1 == x2+i*v2) {
-				System.out.println("yes");
-			}
+	for(int i=0;i<100;i++) {
+		if(x1 + i*v1 == x2+i*v2) {
+			System.out.println("yes");
 		}
-	}
+	   }
+       }
 	
 	
 	//birthday candles
